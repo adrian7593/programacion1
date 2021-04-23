@@ -6,29 +6,18 @@ Algoritmo TP3_EJ2
 //			realizó el cálculo, el mayor y el menor obtenido.
 	
 	Definir numAleatorio, numMayor, numMenos, i como entero
-	
-	numAleatorio = 0
-	numMayor = 0
-	numMenor = 100
-	
-	para i = 1 hasta 10 con paso 1 Hacer
-		
-		numAleatorio = Azar(100)
-		
-		Escribir numAleatorio
-		
-		si numMayor < numAleatorio
-			numMayor = numAleatorio
-		FinSi
-		
-		si numMenor > numAleatorio
-			numMenor = numAleatorio
+	numAleatorio = 0
+	numMayor = 0
+	numMenor = 100
+
+	para i = 1 hasta 10 con paso 1 Hacer
+		numAleatorio = Azar(100)		Escribir numAleatorio		
+		si numMayor < numAleatorio
+			numMayor = numAleatorio
+		FinSi		
+		si numMenor > numAleatorio			numMenor = numAleatorio
 		FinSi
-		
-	FinPara
-	
-	Escribir ""
-	Escribir "El mayor numero de la lista es " numMayor
-	Escribir "El menor numero de la lista es " numMenor
+			FinPara
+	Escribir ""	Escribir "El mayor numero de la lista es " numMayor	Escribir "El menor numero de la lista es " numMenor
 	
 FinAlgoritmo
