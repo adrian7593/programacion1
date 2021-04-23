@@ -1,0 +1,71 @@
+Algoritmo TP3_EJ3
+//	3. Desarrollar un algoritmo que permita calcular la suma de los primeros
+//	cien números. Agregar un menú con tres opciones:
+//		a. Opción 1: Calcular utilizando la estructura PARA
+//		b. Opción 2: Calcular utilizando la estructura MIENTRAS
+//		c. Opción 3: Calcular utilizando la estructura REPETIR
+//		d. Detectar si el usuario ingresa una opción incorrecta, informar al
+//			usuario si desea salir o continuar con la ejecución del programa
+//		Informar al usuario:
+//					- La opción seleccionada.
+//					- La sumatoria de los números.
+//					- Consultar si desea continuar o finalizar el ejercicio
+	
+	Definir sumatoria, i, menu, salir como entero
+	
+	Repetir
+		
+		sumatoria = 0	
+		i = 1
+		
+		Escribir "----------------------------------------------------------------------"
+		Escribir "Seleccione el metodo para la sumatoria de los primeros 100 numeros"
+		Escribir "1   PARA"
+		Escribir "2   MIENTRAS"
+		Escribir "3   REPETIR"
+		leer menu
+	
+		segun menu hacer
+			
+			caso 1:
+			
+				Escribir "Seleccionó la opcion PARA"
+				para i = 1 hasta 100 con paso 1 hacer
+					sumatoria = sumatoria + i
+				FinPara
+				Escribir "La sumatoria de los numeros es " sumatoria
+			
+			caso 2:
+			
+				Escribir "Seleccionó la opcion MIENTRAS"
+				Mientras i <= 100
+				
+					sumatoria = sumatoria + i
+					i = i + 1
+				FinMientras
+				Escribir "La sumatoria de los numeros es " sumatoria
+			
+			caso 3:
+			
+				Escribir "Seleccionó la opcion REPETIR"
+				Repetir
+					sumatoria = sumatoria + i
+					i = i + 1
+				Hasta Que i = 101
+				Escribir "La sumatoria de los numeros es " sumatoria
+			
+			De Otro Modo:
+			
+				Escribir "La opcion seleccionada es incorrecta."
+		FinSegun
+		
+		si salir <> 1
+			
+			Escribir ""
+			Escribir "Desea volver a ejecutar el programa?  [1]NO   [2]SI"
+			leer salir
+		FinSi
+		
+	Hasta Que salir == 1
+	
+FinAlgoritmo

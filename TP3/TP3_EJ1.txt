@@ -1,0 +1,17 @@
+Algoritmo TP3_EJ1
+//	1. Desarrollar un algoritmo que imprima la tabla de multiplicar de los números del uno diez.
+	
+	Definir i, j, multiplicacion como entero
+	
+	para i desde 1 hasta 10 con paso 1 hacer
+
+		Escribir "Tabla del " i 
+		para j desde 1 hasta 10 con paso 1 Hacer
+			multiplicacion = i * j
+			Escribir i " x " j " = " multiplicacion
+		FinPara
+		
+		Escribir "---------------------------"
+	FinPara
+	
+FinAlgoritmo

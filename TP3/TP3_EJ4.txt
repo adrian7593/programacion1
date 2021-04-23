@@ -1,0 +1,82 @@
+Algoritmo TP3_EJ4
+//	4. Desarrollar un algoritmo que permita realizar las operaciones básicas de
+//		una calculadora (suma, resta, multiplicación, división, potencia). Debe
+//		permitir leer dos valores. A continuación desplegar un menú con las
+//		opciones mencionadas. Detectar si los números ingresados no son	
+//			válidos para la operación seleccionada. En caso de que no sean válidos,
+//				solicitar nuevamente el ingreso de los valores.
+//			Informar al usuario:
+//				- La opción seleccionada.
+//				- El resultado de la operación matemática
+//				- Consultar si desea continuar o finalizar el ejercicio
+	
+	Definir valor1, valor2, resultado, seguir como real
+	Definir menu como entero
+	
+	repetir
+		
+		escribir "----------------------------------------------------"
+		
+		menu = 0
+		valor1 = 0
+		valor2 = 0
+		resultado = 0
+		
+		Repetir
+				
+			seguir = 0
+				
+			Escribir "Ingrese el primer valor"
+			leer valor1
+			Escribir "Ingrese el segundo valor"
+			leer valor2 
+			
+			Repetir
+				Escribir "Indique la operacion que desea realizar"
+				Escribir "1   Suma"
+				Escribir "2   Resta"
+				Escribir "3   Multiplicacion"
+				Escribir "4   Division"
+				Escribir "5   Potencia"
+				leer menu
+				Escribir ""
+			Hasta Que menu > 0 && menu < 6
+			
+			si menu == 4 && valor2 == 0
+				escribir "Los valores son invalidos para la operacion"
+				Escribir ""
+				seguir = 1
+			FinSi
+			
+		Hasta Que seguir <> 1
+		
+		escribir "Usted selecciono la operacion "
+		
+		Segun menu
+			
+			caso 1:
+				Escribir "suma"
+				resultado = valor1 + valor2
+			caso 2:
+				Escribir "resta"
+				resultado = valor1 - valor2
+			caso 3:
+				Escribir "multiplicacion"
+				resultado = valor1 * valor2
+			caso 4:
+				Escribir "division"
+				resultado = valor1 / valor2
+			caso 5:
+				Escribir "potencia"
+				resultado = valor1 ^ valor2
+		FinSegun
+		
+		Escribir "El resultado es " resultado
+		
+		Escribir ""
+		Escribir "Desea realizar otra operacion?: 1 SI      2 NO"
+		leer salir
+		
+	Hasta Que salir == 2
+	
+FinAlgoritmo
