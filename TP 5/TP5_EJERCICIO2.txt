@@ -1,0 +1,38 @@
+Algoritmo TP5_EJERCICIO2
+	//RODRIGUEZ ADRIAN
+	//TP5_EJERCICIO2
+	//2.	Escribe un procedimiento que escriba en pantalla los n primeros números primos. El procedimiento recibe n como parámetro.
+	Definir numero1 Como Entero
+	
+	numero1 = 400	
+	MostrarNumerosPrimos(numero1)
+	
+	
+FinAlgoritmo
+
+SubProceso MostrarNumerosPrimos (n) 
+	
+	Definir contadorNumPrimos como entero
+	Definir flag como entero
+	contadorNumPrimos = 0;
+	
+	Para i = 2 hasta n con paso 1 Hacer
+		
+		flag = 0
+		
+		para j = 1 hasta i con paso 1 hacer
+			si i % j == 0 entonces
+				flag = flag + 1;
+			FinSi
+		FinPara
+		
+		si flag == 2 Entonces
+			contadorNumPrimos = contadorNumPrimos + 1;
+		FinSi
+		
+	FinPara
+	
+	Escribir "Entre el numero 0 hasta " , n , " hay " , contadorNumPrimos , " numeros primos"
+	
+FinSubProceso
+	

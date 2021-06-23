@@ -1,0 +1,32 @@
+Algoritmo TP5_EJERCICIO5
+	//RODRIGUEZ ADRIAN
+	//TP5_EJERCICIO5
+	//5.	Escribe una función llamada media2 que reciba dos reales y devuelva el real que representa el promedio de ambos números.
+	//Escribe luego un programa utilizando la función anterior que lea dos reales por teclado y devuelva la media aritmética de ambos.
+	
+	Definir numeroPromedio como real
+	
+	numeroPromedio = media2(leerEntrada, leerEntrada)
+	
+	Escribir "El promedio de los numeros ingresados es ", numeroPromedio
+	
+	
+FinAlgoritmo
+
+SubProceso promedio <- media2 (num1, num2)
+	
+	Definir promedio Como Real
+	
+	promedio = (num1 + num2) / 2
+	
+FinSubProceso
+
+SubProceso num <- leerEntrada()
+	
+	Definir num Como Real
+	
+	Escribir "Escribir un numero real"
+	leer num
+	
+FinSubProceso
+	

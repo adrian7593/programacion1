@@ -1,0 +1,43 @@
+Algoritmo TP5_EJERCICIO3
+	//RODRIGUEZ ADRIAN
+	//TP5_EJERCICIO3
+	//3.	Implemente un programa con subprogramas que, leyendo el nombre de tres alumnos y la nota obtenida por cada uno en una asignatura, 
+	//muestre por pantalla la media de las notas.
+	
+	Dimension alumnos[3]
+	Dimension notas[3]
+	
+	alumnos[0] = "Adrian"
+	alumnos[1] = "Jorge"
+	alumnos[2] = "Juan"
+	notas[0] = 0
+	notas[1] = 0
+	notas[2] = 0
+	
+	CargarNotas(alumnos, notas)
+	
+	Escribir "La media de las notas es " CalcularPromedio(notas)
+	
+FinAlgoritmo
+
+SubProceso media <- CalcularPromedio(notas)
+	
+	definir aux, media como real
+	
+	para i = 0 hasta 2 con paso 1 hacer
+		aux = aux + notas[i]
+	FinPara
+	
+	media = aux / 3
+	
+FinSubProceso	
+
+SubAlgoritmo  CargarNotas(alumnos, notas)
+	
+	para i = 0 hasta 2 con paso 1 hacer
+		Escribir "Cargar la nota de ", alumnos[i]
+		leer notas[i]
+	FinPara
+	
+finSubAlgoritmo 
+	

@@ -1,0 +1,32 @@
+Algoritmo TP5_EJERCICIO4
+	//RODRIGUEZ ADRIAN
+	//TP5_EJERCICIO4
+	//4.	Crear un procedimiento que intercambie los valores de dos variables. Realizar un programa que llame a este procedimiento 
+	//para que intercambie dos valores leídos desde el teclado y los muestre por pantalla
+	
+	definir num1, num2 como entero
+	
+	Escribir "Ingresar valor 1"
+	Leer num1
+	Escribir "Ingresar valor 2"
+	Leer num2
+	
+	IntercambiarValores(num1, num2)
+	
+	Escribir "Valor 1 = " num1
+	Escribir "Valor 2 = " num2
+	
+	
+	
+FinAlgoritmo
+
+SubProceso IntercambiarValores (valor1 por referencia, valor2 por referencia)
+	
+	Definir aux como real
+	
+	aux = valor1
+	valor1 = valor2
+	valor2 = aux
+	
+FinSubProceso
+	

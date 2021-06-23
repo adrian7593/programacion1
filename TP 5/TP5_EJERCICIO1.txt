@@ -1,0 +1,27 @@
+Algoritmo TP5_EJERCICIO1
+	//RODRIGUEZ ADRIAN
+	//TP5_EJERCICIO1
+	//1.	Crear un subprograma que reciba como entrada un valor entero e indique si se trata de un número par o impar. ¿Qué tipo de subprograma crees más apropiado, 
+	//procedimiento o función? Escribe también un programa principal para probar el subprograma.
+	
+	definir num1 como entero
+	
+	Escribir "Ingrese un numero para verificar si es par o impar"
+	leer num1
+	
+	escribir "El numero ingresado es " + VerificarParidad(num1)
+	
+FinAlgoritmo
+
+SubProceso paridad <- VerificarParidad(num)
+	
+	definir paridad como cadena
+	
+	si (num % 2 == 0) entonces
+		paridad = "par"
+	sino
+		paridad = "impar"
+	FinSi
+	
+FinSubProceso
+	
